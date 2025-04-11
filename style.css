@@ -1,0 +1,313 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('polices/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('polices/Montserrat-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+}
+
+/* Header et barre de navigation */
+.top-bar {
+    background-color: #000;
+    color: white;
+    padding: 5px 20px;
+    text-align: right;
+}
+
+nav {
+    background-color: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+nav img {
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #000;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Section Slider */
+.slider {
+    background-color: #444;
+    background-image: url('images/fusee.svg'), url('images/slider.png');
+    background-position: right center, center center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 15%, cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.slider h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.slider p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.slider button {
+    background-color: rgba(255, 255, 255, 1);
+    color: #333;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    font-weight: bold;
+    border-radius: 4px;
+
+}
+
+.slider button:hover {
+    opacity: 0.8;
+}
+
+/* Section Services */
+.services {
+    background-color: #0090cf;
+    color: white;
+    display: flex;
+    padding: 50px 30px;
+    justify-content: space-around;
+}
+
+.services > div {
+    display: flex;
+    width: 45%;
+    align-items: center;
+}
+
+.services img {
+    width: 120px;
+    height: 120px;
+    margin-right: 20px;
+}
+
+.services h2 {
+    margin-bottom: 15px;
+}
+
+.services p {
+    margin-bottom: 20px;
+}
+
+.services a {
+    text-decoration: none;
+    padding: 8px 15px;
+    margin-right: 10px;
+    color: white;
+    border-radius: 4px;
+}
+
+.services a:first-child {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.services a:last-child {
+    background-color: rgba(155, 194, 60, 1);
+}
+
+/* Section Fonctionnalités */
+.features {
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.features h2 {
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.features > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.features div div {
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+}
+
+.features div div img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.features div div p {
+    color: #939292;
+}
+
+/* Section Data Centers */
+/* Section Data Centers - Version améliorée */
+.data-centers {
+    background-color: #e0e0e0;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement si nécessaire */
+    gap: 40px; /* Ajoute un espacement fixe entre les blocs */
+    padding: 20px; /* Ajoute un peu d'espace autour */
+    
+}
+
+/* Bloc gauche - Informations détaillées */
+.data-centers > div:nth-child(1) {
+    width: 35%;
+    background-color: #0090cf;
+    color: white;
+    border-radius: 4px;
+    padding: 30px;
+}
+
+.data-centers > div:nth-child(1) h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.data-centers > div:nth-child(1) p {
+    margin-bottom: 15px;
+}
+
+.data-centers > div:nth-child(1) hr {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 15px 0;
+}
+
+.data-centers > div:nth-child(1) p span {
+    font-weight: bold;
+    color: white;
+}
+
+/* Bloc central - Prix et appel à l'action */
+.data-centers > div:nth-child(2) {
+    width: 55%;
+    background-color: #333;
+    color: white;
+    border-radius: 4px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 150px;
+
+    
+}
+
+.data-centers > div:nth-child(2) h3 {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 20px; 
+}
+
+.data-centers > div:nth-child(2) h3 small {
+    font-size: 16px;
+}
+
+.data-centers > div:nth-child(2) a {
+    background-color: white;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+}
+
+.data-centers > div:nth-child(2) a:hover {
+    background-color: #f5f5f5;
+}
+
+/* Styles spécifiques pour les éléments de la liste d'informations */
+.data-centers span {
+    font-weight: 600;
+}
+
+/* Styles pour la partie détails techniques */
+.data-centers p {
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+/* Style pour le panneau de contrôle et autres spécifications */
+.data-centers p:nth-child(odd) {
+    color: #f5f5f5;
+}
+/* Section Contact */
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.contact img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px 0 30px;
+    transition: transform 0.3s ease;
+}
+
+.contact img:hover {
+    transform: scale(1.2);
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
